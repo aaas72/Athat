@@ -1,0 +1,605 @@
+:root {
+    --font-family: "Tajawal Medium", sans-serif;
+    --font-size: 16px;
+    --color-text: #6E5F58;
+    --color-background-: #fff;
+    --spacing-unit: 8px;
+    --border-width: 1px;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background-color: #EFEFEF;
+}
+/******* CONTAINER START *******/
+.cont {
+    width: 1560px;
+    margin: auto ;
+}
+/******* CONTAINER END *******/
+
+/***************** NAVBAR START SECTION **********************/
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgba(217, 217, 217, 0.88);
+    box-shadow: 0 -2px 30px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*** LOGO ***/
+.navbar .logo {
+    font-family: "Tajawal ExtraBold", serif;
+    color: var(--color-text);
+    font-size: 15Px;
+    display: flex;
+    justify-content: center;
+}
+/*** NAVBAR LISTS ***/
+.navbar .lists {
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.navbar .lists ul {
+    display: flex;
+}
+.navbar .lists ul li {
+    color: var(--color-text);
+    list-style: none;
+    margin: 0 20px 0 20px;
+    font-size: 20px;
+}
+.navbar .lists ul li:hover {
+    color: #564947;
+    cursor: pointer;
+}
+
+/*** ICONS ***/
+.navbar .icons {
+    font-family: "Tajawal Medium", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.navbar .icons ul li i{
+    color: #6E5F58;
+}
+.navbar .icons ul {
+    display: flex;
+}
+.navbar .icons ul li {
+    color: var(--color-text);
+    list-style: none;
+    margin: 0 20px 0 20px;
+}
+.navbar .icons ul li i:hover {
+    color: #564947;
+    cursor: pointer;
+}
+.navbar .icons input {
+    width: 200px;
+    height: 15px;
+    background-color: #6E5F58;
+    text-align: end;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+    font-family: "Tajawal Medium";
+    padding: 5px;
+
+}
+/*************************** NAVBAR END  ***************************************/
+/*-----------------------------------------------------------------------------*/
+/*************************** HEAD START SECTION ********************************/
+.head {
+    height: 750px;
+    background-image: url("imgs/bg.jpg");
+    background-size: cover;
+}
+/*** HEAD TITLES ***/
+.head .title {
+    margin: 0px;
+    padding: 250px 200px 0 0;
+    text-align: right;
+    color: var(--color-text);
+    font-family: "Tajawal Medium", serif;
+    font-size: 40px;
+}
+/*** HEAD PARAGRAPH ***/
+.head .paragraph {
+    margin: 0px;
+    padding: 10px 200px 0 0;
+    text-align: right;
+    color: var(--color-text);
+    font-family: "Tajawal Light", serif;
+    font-size: 40px;
+}
+/*** HEAD BUTTON ***/
+.head .button {
+    width: 120px;
+    height: 40px;
+    background-color: #6E5F58;
+    color: white;
+    font-size: 20px;
+    font-family: Tajawal;
+    float: right;
+    margin: 10px 200px 0 0;
+    border: none;
+    border-radius:3px;
+}
+.head .button:hover {
+    background-color: #564947;
+    cursor: pointer;
+    transition:  0.3s;
+}
+/*** HEAD MOVE LEFT AND RIGHT ***/
+.movelr {
+    margin-top: 250px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.movelr li {
+    width: 10px;
+    height:10px ;
+    background-color: #6E5F58;
+    color: #6E5F58;
+    margin: 10px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #EFEFEF
+
+
+}
+/*************************** HEAD END  SECTION **********************************/
+/*------------------------------------------------------------------------------*/
+/*************************** PRODUCTS START  SECTION ****************************/
+.products {
+    display: block;
+    margin: 150px 0px 150px 0px ;
+
+}
+/*** PRODUCTS TITLE ***/
+.products .title {
+    display: flex;
+    justify-content: center;
+    color: var(--color-text);
+    font-family: "Tajawal ExtraBold", serif;
+    font-size: 35px;
+
+}
+/*** PRODUCTS  LISTS ***/
+.products ul {
+    padding: 100px 50px 0 50px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rowa:50px 50px 50px ;
+    row-gap: 60px;
+    /*background-color: #6E5F58;*/
+    justify-items: center; /* توسيط أفقي */
+    align-items: center;
+
+}
+.products ul li {
+    text-align: center;
+    width: 350px;
+    height:350px;
+    background-color: #EFEFEF;
+}
+.products ul li:hover {
+    cursor: pointer;
+    box-shadow: 0 -1px 30px rgba(0, 0, 0, 0.25);
+
+}
+.products ul li img {
+    width: 350px;
+    height: auto;
+}
+.products ul li p {
+    display: flex;
+    float: right;
+    margin-right: 20px;
+    font-family: "Tajawal Medium", serif;
+    font-size: 18px;
+    color: #6E5F58;
+}
+.products ul li h3 {
+    display: flex;
+    float: left;
+    margin-left: 20px;
+    font-family: "Tajawal ExtraBold", serif;
+    font-size: 18px;
+    color: #6E5F58;
+}
+/*** MORE PRODUCTS ***/
+.products .button {
+    display: block;
+    margin: 100px auto auto auto;
+    width: 110px;
+    height: 40px;
+    border-style: none;
+    border-radius: 3px;
+    font-family: var(--font-family);
+    color: #6E5F58;
+    font-size: large;
+    background-color: white;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.25);
+}
+.products .button:hover {
+    cursor: pointer;
+    background-color: #8f857e;
+    color: #EFEFEF;
+}
+/*************************** PRODUCTS END  SECTION **********************************/
+/*----------------------------------------------------------------------------------*/
+/*************************** AD START  SECTION ********************************/
+.ad {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 100px auto 100px auto;
+    padding-top: 100px;
+
+
+}
+/*** AD IMGS **
+.ad img {
+    width: 800px;
+
+
+}*/
+/*** AD TITLE ***/
+.ad .title {
+    display: flex;
+    flex-direction: column;
+   text-align: end;
+    width: auto;
+    height: 200px;
+    background-color: #6E5F58;
+    padding: 80px 90px  0 0;
+
+
+}
+.ad .title h3 {
+    margin: 0px;
+    color: #EFEFEF;
+    font-family: "Tajawal Medium", serif;
+    font-size: xx-large;
+
+}
+.ad .title h4 {
+    margin: 20px 10px 0 0;
+    color: #EFEFEF;
+    font-family: "Tajawal Light", serif;
+    font-size: larger;
+
+}
+.ad .title h4:hover {
+    cursor: pointer;
+    color: silver;
+}
+.ad .title i:hover {
+    color: silver;
+    margin-top: 30px;
+}
+
+
+.send {
+    width: auto;
+    height: 400px;
+    background-color: white;
+    margin: 150px 0px 150px 0px;
+    text-align: center;
+}
+.send h2 {
+    padding-top: 70px;
+    font-family: "Tajawal ExtraBold", serif;
+    color: #6E5F58 ;
+    font-size: 30px;
+
+}
+.send p {
+    padding-top: 0px;
+    font-family: "Tajawal Medium", serif;
+    color: #6E5F58 ;
+    font-size: 20px;
+}
+.send input {
+    width: 350px;
+    height: 35px;
+    background-color: #6E5F58;
+    border-style: none;
+    border-radius: 3px;
+    color: #EFEFEF;
+    font-family: "Tajawal Medium", serif;
+    font-size: 20px;
+    margin-top: 20px;
+   text-align: end;
+
+}
+.send button {
+    height: 35px;
+    border-style: none;
+    border-radius: 3px;
+    font-family: "Tajawal ExtraBold", serif;
+    font-size: 20px;
+    background-color: #EFEFEF;
+    color: #6E5F58;
+}
+.send button:hover {
+    cursor: pointer;
+    background-color: #6E5F58;
+    color: #EFEFEF;
+
+}
+
+.serces {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin: 100px auto 100px auto;
+
+}
+.serces h2 {
+    font-size: 25px;
+    font-family: "Tajawal Medium", serif;
+    color: #6E5F58;
+}
+.serces i {
+    color: #6E5F58;
+}
+
+header {
+    width: auto;
+    height:  300px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    text-align: end;
+
+}
+header .title h2 {
+    font-family: "Tajawal ExtraBold", serif;
+    color: #6E5F58;
+    margin: 50px 0px 0px 0px;
+    font-size: 20px;
+
+}
+header .title ul {
+    font-family: "Tajawal Medium", serif;
+    color: #6E5F58;
+    margin: 10px 10px 0px 0px;
+    font-size: 15px;
+    list-style: none;
+
+}
+header .title ul li:hover {
+    cursor: pointer;
+    color: #564947;
+    text-decoration: underline;
+    transition:  0.3s;
+
+
+}
+header  .logo h2 {
+    font-family: "Tajawal ExtraBold", serif;
+    color: #6E5F58;
+    margin: 80px 100px 0px 0px;
+    font-size: 30px;
+}
+header  .logo p {
+    font-size: 15px;
+    color: #6E5F58;
+    font-family: "Tajawal Medium", serif;
+    width: 300px;
+    float: right;
+    margin-right: 100px;
+}
+
+.copy {
+    text-align: center;
+    font-family: "Tajawal Medium", serif;
+    color: #6E5F58;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider{
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(-15%);
+    z-index: -1;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 800px;
+    height: 500px;
+
+}
+.slider .buttons{
+
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: none;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid-container {
+    width: 1400px;
+    margin: 100px auto auto auto;
+    display: grid;
+    gap: 20px;
+
+    padding: 20px;
+}
+.item1 img {
+    display: flex;
+    width: 930px;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+.item2 img {
+    display: flex;
+    width: 450px;
+    height: 622px;
+    margin: 0px;
+    padding: 0px;
+}
+.item3 img {
+    display: flex;
+    width: 455px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.item4 img {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 455px;
+    height: auto;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0px;
+    font-size: 30px;
+}
+
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    text-align: right;
+
+
+
+
+}
+.dropdown button {
+    background-color: transparent;
+    font-family: var(--font-family);
+    color: #6E5F58;
+    font-size: 20px;
+    border-style: none;
+
+}
+.dropdown-content a {
+    color: #564947;
+    padding: 12px  16px;
+
+    text-decoration: none;
+    display: block;
+    background: rgba(217, 217, 217, 0.88);
+    color: #564947;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
